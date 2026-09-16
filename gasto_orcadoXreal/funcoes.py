@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 #Função para gerar os graficos
 
-def GerarGraficos():
+def gerarGraficos():
     g = int(input("Quantos Graficos deseja Gerar? (Número): "))
     graficos = []
 
@@ -51,12 +51,12 @@ def plotar(cat, orc, rea):
     y=["Gasto Orcado", "Gasto Real"],
     kind="bar",
     figsize=(9,5),
-    color=["#4C72B0","#DD8452"]
+    color=["#0F35DF","#E21616"]
   )
 
-  plt.title("Comprativo: Orçado Vs Realizado (R$)", fontsize=13, fontweight="bold")
-  plt.xlabel("Categora de Despesa", fontsize=11)
-  plt.ylabel("Valor em R$", fontsize=11)
+  plt.title("Comparativo: Orçado Vs Realizado (R$)", fontsize=13, fontweight="bold")
+  plt.xlabel("Categoria da Despesa", fontsize=11)
+  plt.ylabel("Valor gasto (R$)", fontsize=11)
   plt.xticks(rotation=0)
   plt.grid(axis="y", linestyle="--", alpha=0.5)
   plt.legend(["Orçado", "Realizado"])
